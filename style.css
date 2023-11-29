@@ -1,0 +1,93 @@
+body {
+  background-image: url('images/image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #070c0d; /* Restoring text color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+  
+  a {
+    color: #3498db;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #070c0d59;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  }
+  
+/* Adjustments for better readability and aesthetics */
+header {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+  
+button, #search-enter {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(233, 226, 226, 0.85);
+    color: #141313;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Adjust margin if needed */
+}
+
+button:hover,
+#search-enter:hover {
+  background-color: #f7a77c; /* Darker shade on hover */
+}
+  
+  .info-container {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    background: rgba(233, 226, 226, 0.85); /* Adjust the opacity here (currently set to 50%) */
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: none; /* Remove box shadow */
+    margin-right: 8px;
+}
+  
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1px; /* Adjust margin if needed */
+    background-color: rgba(233, 226, 226, 0.85);
+}
+
+/* Adjusted input field on hover (if needed) */
+input[type="text"]:hover {
+    background-color: #f7a77c; /* Darker shade on hover */
+}
+
+input[type="text"]::placeholder {
+  color: #141313; /* Set placeholder text color to white */
+}
+
+.info-box p,
+.info-box h2
+{ /* Target the title specifically */
+    color: #000000; /* Set the color to the preferred dark shade */
+}
+
+.info-box h1 {
+  color: white;
+}

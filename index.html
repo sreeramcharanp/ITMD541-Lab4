@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab4</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sunrise - Sunset Times</h1>
+    </header>
+    <section class="info-container">
+      <div class="info-box" id="today-info">
+        <h2>Today</h2>
+        <p><strong><span id="current-date"></span></strong></p>
+       <div class="forecast-details" id="today-forecast-details">
+          <p>Sunrise: <strong><span id="sunrise"></span></strong></p>
+          <p>Sunset: <strong><span id="sunset"></span></strong></p>
+          <p>Dawn: <strong><span id="Dawn"></span></strong></p>
+          <p>Dusk: <strong><span id="Dusk"></span></strong></p>
+          <p>Day Length : <strong><span id="today-day-length"></span></strong></p>
+          <p>Solar Noon : <strong><span id="today-solar-noon"></span></strong></p>
+          <p>Time Zone: <strong><span id="time-zone"></span></strong></p>
+        </div>
+      </div>
+      <div class="info-box" id="tomorrow-info">
+        <h2>Tomorrow</h2>
+        <p><strong><span id="tomorrow-date"></span></strong></p>
+        <div class="forecast-details" id="tomorrow-forecast-details">
+          <p>Sunrise: <strong><span id="tomorrow-sunrise"></span></strong></p>
+          <p>Sunset: <strong><span id="tomorrow-sunset"></span></strong></p>
+          <p>Dawn: <strong><span id="tomorrow-Dawn"></span></strong></p>
+          <p>Dusk: <strong><span id="tomorrow-Dusk"></span></strong></p>
+          <p>Day Length : <strong><span id="tomorrow-day-length"></span></strong></p>
+          <p>Solar Noon : <strong><span id="tomorrow-solar-noon"></span></strong></p>
+          <p>Time Zone: <strong><span id="tomorrow-time-zone"></span></strong></p>
+        </div>
+      </div>
+    </section>
+    <section>
+        <button id="geolocation-btn" onclick="getCurrentLocation()"><i class="fas fa-location-arrow"></i> Use Current Location</button> 
+        <input type="text" id="location-input" placeholder="Enter location">
+        <button id="search-enter" onclick="searchLocation()">search</button>
+    </section>
+    <code id="raw-output"></code>
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+</body>
+</html>
